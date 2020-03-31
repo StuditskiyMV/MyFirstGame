@@ -16,7 +16,8 @@ document.querySelector('.button').addEventListener('click', function() {
 
     //запускаем таймер
     let time;
-    time = n * 3;
+    time = n * 5;
+    let newSum = 10;
     counter();
 
     function counter() {
