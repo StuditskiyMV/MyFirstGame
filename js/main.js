@@ -41,7 +41,7 @@ document.querySelector('.button').addEventListener('click', function() {
     let arrPictures = [];
 
     for (let i = 1; i <= picturesAmount; i++) {
-      arrPictures.push(`/images/${i}.jpg`);
+      arrPictures.push(`images/${i}.jpg`);
     }
 
     while (arrPictures.length < n / 2) {
