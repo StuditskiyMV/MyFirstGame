@@ -11,7 +11,7 @@
 
 .table {
   min-height: 100vh;
-  background-image: url('/images/background.jpg');
+  background-image: url('../images/background.jpg');
 }
 
 .controls {
@@ -56,7 +56,7 @@
   cursor: pointer;
 
   &.cover {
-    background-image: url('/images/cover.jpg');
+    background-image: url('../images/cover.jpg');
 
     &.appear {
       transform: translateY(-20px);
