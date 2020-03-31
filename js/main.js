@@ -21,7 +21,7 @@ document.querySelector('.button').addEventListener('click', function() {
 
     function counter() {
       if (time >= 0) {
-        document.querySelector('.timer').innerHTML = `${time}`;
+        document.querySelector('.timer').textContent = `${time}`;
         time--;
         setTimeout(counter, 1000);
       } else {
