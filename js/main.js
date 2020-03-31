@@ -17,11 +17,13 @@ document.querySelector('.button').addEventListener('click', function() {
     //запускаем таймер
     let time;
     time = n * 3;
+    counter();
 
-    let timeOut = setInterval(() => {
+    function counter() {
       if (time >= 0) {
         document.querySelector('.timer').innerHTML = `${time}`;
         time--;
+        setTimeout(counter, 1000);
       } else {
         alert(
           'К сожалению Вы не успели выполнить задание за отведенное время...'
@@ -29,9 +31,8 @@ document.querySelector('.button').addEventListener('click', function() {
         document.querySelectorAll('.card-item').forEach(function(value) {
           value.remove();
         });
-        clearInterval(timeOut);
       }
-    }, 1000);
+    }
 
     //создаем массив картинок
     let picturesAmount = 20;
