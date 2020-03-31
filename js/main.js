@@ -34,6 +34,13 @@ document.querySelector('.button').addEventListener('click', function() {
       }
     }
 
+    //делаем новую функцию
+    function foo() {
+      if ((time = 0)) {
+        alert('Время вышло!');
+      }
+    }
+
     //создаем массив картинок
     let picturesAmount = 20;
     let arrPictures = [];
