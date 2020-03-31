@@ -1,3 +1,5 @@
+'use strict';
+
 let n = null;
 let result = 0;
 alert(
