@@ -71,7 +71,7 @@ document.querySelector('.button').addEventListener('click', function() {
     shuffle(arrCards);
 
     arrCards.forEach(function() {
-      $cardsItem = document.createElement('div');
+      let $cardsItem = document.createElement('div');
       $cardsItem.classList.add('card-item');
       $cardsItem.classList.add('cover');
       $cardsItem.classList.add('appear');
