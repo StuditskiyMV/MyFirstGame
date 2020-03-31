@@ -20,7 +20,7 @@ document.querySelector('.button').addEventListener('click', function() {
 
     let timeOut = setInterval(() => {
       if (time >= 0) {
-        document.querySelector('.timer').innerHTML = `${time}`;
+        document.querySelector('.timer').textContent = `${time}`;
         time--;
       } else {
         alert(
